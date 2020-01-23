@@ -6,7 +6,7 @@
 |------|----|-------|
 |email|string|null: false,/[^\s]@[^\s]/|
 |password|string|null: false|
-|name|string|null: false,foreign_key: true,unique: true|
+|name|string|null: false,unique: true|
 ### Association
 - has_many :comments
 - has_many :groups_users
@@ -26,7 +26,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, foreign_key: true|
+|name|string|null: false|
 ### Association
 - has_many :comments
 - has_many :groups_users
